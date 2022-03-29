@@ -150,5 +150,5 @@ println("Starting deploying the documentation...")
 deploydocs(
     repo      = "github.com/sylvaticus/testQuestions.git",
     devbranch = "main",
-    target    = " buildedDoc"
+    target    = "buildedDoc"
 )
