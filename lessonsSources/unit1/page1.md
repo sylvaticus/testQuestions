@@ -39,7 +39,7 @@ a = 6
 Which statements are correct ?
 
 ```@example page1.jl
-choices = ["a is now `1`", "a is now `2`", "a is now `3`", "a is now `4`", "a is now `5`", "a is now `6`","None of the sentences is correct", "At least one of that commands raises a run-time error", "None of that commands raises a run-time error"]  # hide
+choices = ["`a` is now `1`", "`a` is now `2`", "`a` is now `3`", "`a` is now `4`", "`a` is now `5`", "`a` is now `6`","None of the sentences is correct", "At least one of that commands raises a run-time error", "None of that commands raises a run-time error"]  # hide
 answers = [2,8]  # hide
 multiq(choices, answers;)  # hide
 ```
@@ -49,7 +49,7 @@ multiq(choices, answers;)  # hide
 ```
 The first command is a comment. On the second one `a` is assigned the value `2`. The third one raises a syntax error as the equal operator expects a right and a left hand side, while here the right hand side is all commented out. Finally lines 4  to the end is a big nested comment. It results that after that commands have been run, `a` remains assigned to `2`.
 The correct answers are:
-- "a is now `2`"
+- "`a` is now `2`"
 - "At least one of that commands raises a run-time error"
 ```@raw html
 </details>
