@@ -132,7 +132,7 @@ println("Starting literating tutorials (.jl --> .md)...")
 literate_directory.(map(lsubdir->joinpath(LESSONS_ROOTDIR ,lsubdir),values(LESSONS_SUBDIR)))
 
 println("Starting making the documentation...")
-makedocs(sitename="SPMLJ",
+makedocs(sitename="Test Quiz Questions",
          authors = "Antonello Lobianco",
          pages = [
             "Index" => "index.md",
@@ -148,7 +148,7 @@ makedocs(sitename="SPMLJ",
 
 println("Starting deploying the documentation...")
 deploydocs(
-    repo = "github.com/sylvaticus/testQuestions.git",
+    repo      = "github.com/sylvaticus/testQuestions.git",
     devbranch = "main",
-    target = "buildedDoc"
+    target    = " buildedDoc"
 )
